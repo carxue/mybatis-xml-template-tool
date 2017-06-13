@@ -1,0 +1,202 @@
+
+<mapper namespace="com.iec.app.inter.bill.IBill">
+ <WARNMING><![CDATA[请注意生成的insert语句中的date类型，要根据需要自行修改！]]></WARNMING>
+ <sql id="薛奎Column"><![CDATA[BIGINT_BIGINT,TINYINT_TINYINT,SMALLINT_SMALLINT,MEDIUMINT_MEDIUMINT,INT_INT,INTEGER_INTEGER,BIT_BIT,REAL_REAL,DOUBLE_DOUBLE,DECIMAL_DECIMAL,
+CHAR_CHAR,VARCHAR_VARCHAR,DATE_DATE,DATETIME_DATETIME,YEAR_YEAR,TIME_TIME,TIMESTAMP_TIMESTAMP,FLOAT_FLOAT]]></sql>
+ <resultMap type="薛奎" id="薛奎">
+  <result column="bigint_bigint" property="bigintBigint"/>
+  <result column="tinyint_tinyint" property="tinyintTinyint"/>
+  <result column="smallint_smallint" property="smallintSmallint"/>
+  <result column="mediumint_mediumint" property="mediumintMediumint"/>
+  <result column="int_int" property="intInt"/>
+  <result column="integer_integer" property="integerInteger"/>
+  <result column="bit_bit" property="bitBit"/>
+  <result column="real_real" property="realReal"/>
+  <result column="double_double" property="doubleDouble"/>
+  <result column="decimal_decimal" property="decimalDecimal"/>
+  <result column="char_char" property="charChar"/>
+  <result column="varchar_varchar" property="varcharVarchar"/>
+  <result column="date_date" property="dateDate"/>
+  <result column="datetime_datetime" property="datetimeDatetime"/>
+  <result column="year_year" property="yearYear"/>
+  <result column="time_time" property="timeTime"/>
+  <result column="timestamp_timestamp" property="timestampTimestamp"/>
+  <result column="float_float" property="floatFloat"/>
+ </resultMap>
+ <insert parameterType="****" id="****">INSERT INTO COLUMNTYPES
+  <trim prefix="(" suffix=")" suffixOverrides=",">
+   <if test="bigintBigint !=null">BIGINT_BIGINT,</if>
+   <if test="tinyintTinyint !=null">TINYINT_TINYINT,</if>
+   <if test="smallintSmallint !=null">SMALLINT_SMALLINT,</if>
+   <if test="mediumintMediumint !=null and mediumintMediumint != ''">MEDIUMINT_MEDIUMINT,</if>
+   <if test="intInt !=null">INT_INT,</if>
+   <if test="integerInteger !=null">INTEGER_INTEGER,</if>
+   <if test="bitBit !=null">BIT_BIT,</if>
+   <if test="realReal !=null">REAL_REAL,</if>
+   <if test="doubleDouble !=null">DOUBLE_DOUBLE,</if>
+   <if test="decimalDecimal !=null">DECIMAL_DECIMAL,</if>
+   <if test="charChar !=null and charChar != ''">CHAR_CHAR,</if>
+   <if test="varcharVarchar !=null and varcharVarchar != ''">VARCHAR_VARCHAR,</if>
+   <if test="dateDate !=null">DATE_DATE,</if>
+   <if test="datetimeDatetime !=null">DATETIME_DATETIME,</if>
+   <if test="yearYear !=null and yearYear != ''">YEAR_YEAR,</if>
+   <if test="timeTime !=null and timeTime != ''">TIME_TIME,</if>
+   <if test="timestampTimestamp !=null">TIMESTAMP_TIMESTAMP,</if>
+   <if test="floatFloat !=null">FLOAT_FLOAT</if>
+  </trim>
+  <trim prefix="VALUES (" suffix=")" suffixOverrides=",">
+   <if test="bigintBigint !=null">#{bigintBigint,jdbcType=BIGINT},</if>
+   <if test="tinyintTinyint !=null">#{tinyintTinyint,jdbcType=TINYINT},</if>
+   <if test="smallintSmallint !=null">#{smallintSmallint,jdbcType=SMALLINT},</if>
+   <if test="mediumintMediumint !=null and mediumintMediumint != ''">#{mediumintMediumint,jdbcType=MEDIUMINT},</if>
+   <if test="intInt !=null">#{intInt,jdbcType=INT},</if>
+   <if test="integerInteger !=null">#{integerInteger,jdbcType=INT},</if>
+   <if test="bitBit !=null">#{bitBit,jdbcType=BIT},</if>
+   <if test="realReal !=null">#{realReal,jdbcType=DOUBLE},</if>
+   <if test="doubleDouble !=null">#{doubleDouble,jdbcType=DOUBLE},</if>
+   <if test="decimalDecimal !=null">#{decimalDecimal,jdbcType=DECIMAL},</if>
+   <if test="charChar !=null and charChar != ''">#{charChar,jdbcType=CHAR},</if>
+   <if test="varcharVarchar !=null and varcharVarchar != ''">#{varcharVarchar,jdbcType=VARCHAR},</if>
+   <if test="dateDate !=null">#{dateDate,jdbcType=DATE},</if>
+   <if test="datetimeDatetime !=null">#{datetimeDatetime,jdbcType=DATETIME},</if>
+   <if test="yearYear !=null and yearYear != ''">#{yearYear,jdbcType=YEAR},</if>
+   <if test="timeTime !=null and timeTime != ''">#{timeTime,jdbcType=TIME},</if>
+   <if test="timestampTimestamp !=null">#{timestampTimestamp,jdbcType=TIMESTAMP},</if>
+   <if test="floatFloat !=null">#{floatFloat,jdbcType=FLOAT}</if>
+  </trim>
+ </insert>
+ <update parameterType="薛奎" id="薛奎 ">UPDATE COLUMNTYPES
+  <set>
+   <if test="bigintBigint !=null">BIGINT_BIGINT=#{bigintBigint,jdbcType=BIGINT},</if>
+   <if test="tinyintTinyint !=null">TINYINT_TINYINT=#{tinyintTinyint,jdbcType=TINYINT},</if>
+   <if test="smallintSmallint !=null">SMALLINT_SMALLINT=#{smallintSmallint,jdbcType=SMALLINT},</if>
+   <if test="mediumintMediumint !=null and mediumintMediumint != ''">MEDIUMINT_MEDIUMINT=#{mediumintMediumint,jdbcType=MEDIUMINT},</if>
+   <if test="intInt !=null">INT_INT=#{intInt,jdbcType=INT},</if>
+   <if test="integerInteger !=null">INTEGER_INTEGER=#{integerInteger,jdbcType=INT},</if>
+   <if test="bitBit !=null">BIT_BIT=#{bitBit,jdbcType=BIT},</if>
+   <if test="realReal !=null">REAL_REAL=#{realReal,jdbcType=DOUBLE},</if>
+   <if test="doubleDouble !=null">DOUBLE_DOUBLE=#{doubleDouble,jdbcType=DOUBLE},</if>
+   <if test="decimalDecimal !=null">DECIMAL_DECIMAL=#{decimalDecimal,jdbcType=DECIMAL},</if>
+   <if test="charChar !=null and charChar != ''">CHAR_CHAR=#{charChar,jdbcType=CHAR},</if>
+   <if test="varcharVarchar !=null and varcharVarchar != ''">VARCHAR_VARCHAR=#{varcharVarchar,jdbcType=VARCHAR},</if>
+   <if test="dateDate !=null">DATE_DATE=#{dateDate,jdbcType=DATE},</if>
+   <if test="datetimeDatetime !=null">DATETIME_DATETIME=#{datetimeDatetime,jdbcType=DATETIME},</if>
+   <if test="yearYear !=null and yearYear != ''">YEAR_YEAR=#{yearYear,jdbcType=YEAR},</if>
+   <if test="timeTime !=null and timeTime != ''">TIME_TIME=#{timeTime,jdbcType=TIME},</if>
+   <if test="timestampTimestamp !=null">TIMESTAMP_TIMESTAMP=#{timestampTimestamp,jdbcType=TIMESTAMP},</if>
+   <if test="floatFloat !=null">FLOAT_FLOAT=#{floatFloat,jdbcType=FLOAT}</if>
+  </set>
+ </update>
+ <insert parameterType="薛奎" id="薛奎">INSERT INTO COLUMNTYPES(BIGINT_BIGINT, TINYINT_TINYINT, SMALLINT_SMALLINT, MEDIUMINT_MEDIUMINT, INT_INT, INTEGER_INTEGER, BIT_BIT, REAL_REAL, DOUBLE_DOUBLE, DECIMAL_DECIMAL, CHAR_CHAR, VARCHAR_VARCHAR, DATE_DATE, DATETIME_DATETIME, YEAR_YEAR, TIME_TIME, TIMESTAMP_TIMESTAMP, FLOAT_FLOAT )VALUES ( #{bigintBigint, jdbcType=BIGINT}, #{tinyintTinyint, jdbcType=TINYINT}, #{smallintSmallint, jdbcType=SMALLINT}, #{mediumintMediumint, jdbcType=MEDIUMINT}, #{intInt, jdbcType=INT}, #{integerInteger, jdbcType=INT}, #{bitBit, jdbcType=BIT}, #{realReal, jdbcType=DOUBLE}, #{doubleDouble, jdbcType=DOUBLE}, #{decimalDecimal, jdbcType=DECIMAL}, #{charChar, jdbcType=CHAR}, #{varcharVarchar, jdbcType=VARCHAR}, #{dateDate, jdbcType=DATE}, #{datetimeDatetime, jdbcType=DATETIME}, #{yearYear, jdbcType=YEAR}, #{timeTime, jdbcType=TIME}, #{timestampTimestamp, jdbcType=TIMESTAMP}, #{floatFloat, jdbcType=FLOAT} )</insert>
+ <java><![CDATA[
+/**
+*null
+*/
+private Long bigintBigint;
+
+/**
+*null
+*/
+private Integer tinyintTinyint;
+
+/**
+*null
+*/
+private Integer smallintSmallint;
+
+/**
+*null
+*/
+private null mediumintMediumint;
+
+/**
+*null
+*/
+private Integer intInt;
+
+/**
+*null
+*/
+private Integer integerInteger;
+
+/**
+*null
+*/
+private Integer bitBit;
+
+/**
+*null
+*/
+private Double realReal;
+
+/**
+*null
+*/
+private Double doubleDouble;
+
+/**
+*null
+*/
+private BigDecimal decimalDecimal;
+
+/**
+*null
+*/
+private String charChar;
+
+/**
+*null
+*/
+private String varcharVarchar;
+
+/**
+*null
+*/
+private Date dateDate;
+
+/**
+*null
+*/
+private Date datetimeDatetime;
+
+/**
+*null
+*/
+private Date yearYear;
+
+/**
+*null
+*/
+private Date timeTime;
+
+/**
+*null
+*/
+private Date timestampTimestamp;
+
+/**
+*null
+*/
+private Float floatFloat;
+]]></java>
+ <javaAttr><![CDATA["bigintBigint","tinyintTinyint","smallintSmallint","mediumintMediumint","intInt","integerInteger","bitBit","realReal","doubleDouble","decimalDecimal",
+"charChar","varcharVarchar","dateDate","datetimeDatetime","yearYear","timeTime","timestampTimestamp","floatFloat"]]></javaAttr>
+ <property name="bigintBigint" type="java.lang.Long" column="BIGINT_BIGINT"/>
+ <property name="tinyintTinyint" type="java.lang.Integer" column="TINYINT_TINYINT"/>
+ <property name="smallintSmallint" type="java.lang.Integer" column="SMALLINT_SMALLINT"/>
+ <property name="mediumintMediumint" column="MEDIUMINT_MEDIUMINT"/>
+ <property name="intInt" type="java.lang.Integer" column="INT_INT"/>
+ <property name="integerInteger" type="java.lang.Integer" column="INTEGER_INTEGER"/>
+ <property name="bitBit" type="java.lang.Integer" column="BIT_BIT"/>
+ <property name="realReal" type="java.lang.Double" column="REAL_REAL"/>
+ <property name="doubleDouble" type="java.lang.Double" column="DOUBLE_DOUBLE"/>
+ <property name="decimalDecimal" type="java.math.BigDecimal" column="DECIMAL_DECIMAL"/>
+ <property name="charChar" type="java.lang.String" column="CHAR_CHAR"/>
+ <property name="varcharVarchar" type="java.lang.String" column="VARCHAR_VARCHAR"/>
+ <property name="dateDate" type="java.util.Date" column="DATE_DATE"/>
+ <property name="datetimeDatetime" type="java.util.Date" column="DATETIME_DATETIME"/>
+ <property name="yearYear" type="java.util.Date" column="YEAR_YEAR"/>
+ <property name="timeTime" type="java.util.Date" column="TIME_TIME"/>
+ <property name="timestampTimestamp" type="java.util.Date" column="TIMESTAMP_TIMESTAMP"/>
+ <property name="floatFloat" type="java.lang.Float" column="FLOAT_FLOAT"/>
+</mapper>
